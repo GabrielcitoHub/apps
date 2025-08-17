@@ -1,5 +1,5 @@
 binser = require("lib.binser")
-wiimote = require("lib.wiimote")
+wiimote = require("modules.wiimote")
 
 function love.system.getOS()
     return "Web"
