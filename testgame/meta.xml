@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<app version="1">
+	<name>TestGame</name>
+	<version>1.0.0</version>
+	<coder>GabrielcitoHub</coder>
+	<short_description>TestGame for the wii!</short_description>
+	<long_description>Test Game for the wii!</long_description>
+</app>
