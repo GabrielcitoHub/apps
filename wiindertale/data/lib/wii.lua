@@ -31,3 +31,7 @@ end
 function love.graphics.newImage(file)
     return love.graphics.newTexture(file)
 end
+
+function love.graphics.newQuad(x, y, width, height, sw, sh)
+    return love.graphics.quad(x, y, width, height, sw, sh)
+end

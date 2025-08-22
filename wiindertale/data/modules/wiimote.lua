@@ -5,6 +5,7 @@ function Wiimote.getWiimote(id)
     wiimote.id = id or 0
     wiimote.x = love.wiimote.getX(wiimote.id)
     wiimote.y = love.wiimote.getY(wiimote.id)
+    wiimote.angle = love.wiimote.getAngle(wiimote.id)
 
     return wiimote
 end
@@ -17,6 +18,14 @@ function Wiimote.getWiimotes()
     end
 
     return wiimotes
+end
+
+function love.getWiimote(id)
+    return Wiimote.getWiimote(id)
+end
+
+function love.getWiimotes()
+    return Wiimote.getWiimotes()
 end
 
 return Wiimote
