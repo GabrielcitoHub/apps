@@ -5,7 +5,6 @@ function Wiimote.getWiimote(id)
     wiimote.id = id or 0
     wiimote.x = love.wiimote.getX(wiimote.id)
     wiimote.y = love.wiimote.getY(wiimote.id)
-    wiimote.angle = love.wiimote.getAngle(wiimote.id) or 0
 
     return wiimote
 end
