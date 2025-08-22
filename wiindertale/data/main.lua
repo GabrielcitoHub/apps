@@ -2,7 +2,6 @@ require "lib.wii"
 
 local cursorsimg
 local plr1cursor
-local wiimote = love.getWiimote(0)
 
 function love.load()
     cursorsimg = love.graphics.newImage("images/cursors.png")
@@ -10,5 +9,5 @@ function love.load()
 end
 
 function love.draw()
-    love.graphics.draw(plr1cursor, wiimote.x, wiimote.y, wiimote.angle, 1, 1, 8, 8)
+    love.graphics.drawQuad(cursorsimg, plr1cursor, wiimote.getWiimote(0).x, wiimote.getWiimote(0).y, wiimote.getWiimote(0).angle, 1, 1, 8, 8)
 end
